@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <div class="header__logo"></div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">Расписание тура</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Как записаться</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Команда</a>
+              </li>
+              <button class="header__btn" type="button">Записаться</button>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__banner">
+          <div class="banner__content">
+            <h1 class="banner__title">Мечты о далекой Камчатке - близко</h1>
+            <span class="banner__subtitle">23.06 - 04.07  DREAM TOUR</span>
+            <p class="bunner__text">Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь. </p>
+            <div class="banner__btn">
+              <span class="banner__btn__text">Расписание тура</span>
+              <div  class ="banner__btn__icon"><i class="fa-solid fa-arrow-up-long fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i></div>
+            </div>
+            <div class="banner__socials">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-vk"></i></a>
+            </div>
+          </div>
+          <div class="slider slider__banner">
+            <div class="slides-container" id="slider1">
+                <div class="slide"><img src="assets/img/IMG_20201121_180903_719 1.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header2.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+            </div>
+            <div class="slider__buttons">
+              <button class="slider__button slider__button--white" id="prev1">←</button>
+              <button class="slider__button slider__button--white" id="next1">→</button>
+            </div>
+        </div>
+      </div>
+      
+    </header>
+    <section class="travel">
+      <div class="travel__inner wrapper">
+        <h2 class="travel__title">Путешествие на край света начинается</h2>
+        <p class="travel__subtitle">Ваша мечта осуществилась, вы приняли решение, и вам предстоит путешествие на край света.</p>
+        <p class="travel__text">Этот маршрут лучший вариант для тех, кто хочет ощутить, как живёт самая молодая земля нашей планеты, многое увидеть, испытать на себе и полюбить, увезти целый рюкзак незабываемых чувств и впечатлений. Каждый день вы будете выезжать на радиальные маршруты, а проживать в комфортабельных двухместных номерах. </p>
+        <div class="travel__info">
+          <div class="travel__info__item">
+            <img class="item__img" src="./assets/img/travel-1.png" alt="">
+            <span class="item__title">Сложность</span>
+            <span class="item__text">Cемейный отдых</span>
+          </div>
+          <div class="travel__info__item">
+            <img class="item__img" src="./assets/img/travel-2.png" alt="">
+            <span class="item__title">Период</span>
+            <span class="item__text">Июль - сентябрь</span>
+          </div>
+          <div class="travel__info__item">
+            <img class="item__img" src="./assets/img/travel-3.png" alt="">
+            <span class="item__title">Длительность</span>
+            <span  class="item__text">7 дней / 6 ночей</span>
+          </div>
+          <div class="travel__info__item">
+            <img class="item__img" src="./assets/img/travel-4.png" alt="">
+            <span class="item__title">Проживание</span>
+            <span  class="item__text">Отель, без палаток</span>
+          </div>
+        </div>
+        <p class="travel__subtitle--white">Камчатка – земля великолепной заснеженной природы, действующих вулканов и диких мест, где ещё не ступала нога человека. </p>
+        <p class="travel__text--white">“Когда мы подлетали к Камчатке, у меня захватило дух от увиденного. Это за гранью реальности. Невероятно!”</p>
+        <p class="travel__author">Максим, @max_max</p>
+      </div>
+    </section>
+    <section class="day-one">
+      <div class="wrapper">
+        <div class="day-one__inner">
+          <div class="days__content">
+            <h2 class="days__title days__title--white"><span>День 1.</span> Прибытие. Встреча в аэропорту и размещение</h2>
+            <div class="days__text days__text--white">
+              <p>С высоты птичьего полета вы увидите знаменитые «домашние»  вулканы – Корякский, Авачинский и Козельский. У выхода в аэропорту <span>вас встретят с табличкой «ДРИМ ТУР».</span> </p>
+              <p><span>По пути в гостиницу сбор средств</span> с членов группы, инструктаж по программе этого дня (бассейн с термальной водой, шашлык, знакомство с группой, алкоголь, фейерверк не раньше 20:00).               </p>
+              <p>После выезд (вид транспорта зависит от величины группы) на базу отдыха в курортный поселок Паратунка. </p>
+              <p><span>Вечером</span>, после прибытия на Камчатку всех участников (если рейсы разные), <span>общая встреча</span>, проверка снаряжения,  обсуждение программы завтрашнего дня.</p>
+            </div>
+          </div>
+          <div class="slider slider__day-one">
+            <div class="slides-container" id="slider2">
+                <div class="slide"><img src="assets/img/IMG_20201121_180903_719 1.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header2.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+            </div>
+            <div class="slider__buttons">
+              <button class="slider__button slider__button--white" id="prev2">←</button>
+              <button class="slider__button slider__button--white" id="next2">→</button>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="day-two">
+      <div class="wrapper day-two__inner">
+        <div class="day-two__content-upper">
+          <h2 class="days__title days__title--black"><span>День 2.</span> Вилючинский водопад, вулкан и <br>Верхне-Паратунские термальные <br>источники</h2>
+          <div class="days__text days__text--black">
+            <p>Инструктаж перед поездкой (передвижение и поведение группы в лесу, общение с медведями, форма одежды, ), снаряжение, (взять тару для воды при заезде на Зайкин ключ, купальные принадлежности).</p>
+            <p>Сбор участников на Роуп Джамп для прыжков с высоты над водопадом. Заранее решаем кто прыгает.</p>
+          </div>
+        </div>
+          <div class="day-two__content-lower">
+            <div class="slider slider-left slider__day-two">
+              <div class="slides-container" id="slider3">
+                  <div class="slide"><img src="assets/img/IMG_20201121_180903_719 1.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                  <div class="slide"><img src="assets/img/slider-header2.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                  <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                  <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                  <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              </div>
+              <div class="slider__buttons">
+                <button class="slider__button slider__button--black" id="prev3">←</button>
+                <button class="slider__button slider__button--black" id="next3">→</button>
+              </div>
+            </div>
+            <div class="days__text days__text--black">
+              <p>Выезд из отеля в 10.00. Переезд в верховья реки Паратунка к подножию вулкана Вилючинский. Обзорная пешеходная экскурсия к водопаду Вилючинский. Термос с чаем, шоколад. Возвращение назад.</p>
+              <p>Обед. Купание в Верхне-Паратунских термальных источниках, расположенных на склоне сопки Горячая. </p>
+              <p>Продолжительность – 6-8 часов. Трансфер в гостиницу.</p>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    <section class="expectations">
+      <div class="expect__inner wrapper">
+        <h2 class="expect__title">На протяжении маршрута вас ожидает:</h2>
+        <div class="expect__cards">
+          <div class="expect__card">
+            <img class="card__img" src="./assets/img/card-1.png" alt="">
+            <div class="card__text">
+              <h3 class="card__title">Аудиосопровождение</h3>
+              <p class="card__p">Новый способ увидеть и услышать, то место, где вы находитесь. С помощью аудиогида вы сможете совершить увлекательную экскурсию по городу.</p>
+            </div>
+          </div>
+          <div class="expect__card">
+            <img class="card__img" src="./assets/img/card-2.png" alt="">
+            <div class="card__text">
+              <h3 class="card__title">Разнообразное питание</h3>
+              <p class="card__p">Каждый обед мы готовим с большой любовью. Кормим вас традиционными камчатскими блюдами. Еда - залог хорошего отдыха!</p>
+            </div>
+          </div>
+          <div class="expect__card">
+            <img class="card__img" src="./assets/img/card-3.png" alt="">
+            <div class="card__text">
+              <h3 class="card__title">Безопасность</h3>
+              <p class="card__p">Наша команда проводит инструктаж, рассказывает как правильно себя вести, как избежать опасных ситуаций.</p>
+            </div>
+          </div>
+          <div class="expect__card">
+            <img class="card__img" src="./assets/img/card-4.png" alt="">
+            <div class="card__text">
+              <h3 class="card__title">Потрясающие фото</h3>
+              <p class="card__p">Можете не переживать, что не успели сделать фото. Наш фотограф успевает везде и за всеми. У вас будут самые лучшие фото!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="day-three">
+      <div class="day-three__inner wrapper">
+        <div class="slider slider-left slider__day-three">
+          <div class="slides-container" id="slider4">
+              <div class="slide"><img src="assets/img/IMG_20201121_180903_719 1.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header2.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button slider__button--black" id="prev4">←</button>
+            <button class="slider__button slider__button--black" id="next4">→</button>
+          </div>
+        </div>
+        <div class="days__content">
+          <h2 class="days__title days__title--black"><span>День 3.</span> Горные цирки и водопады вулкана Вачкажец</h2>
+          <div class="days__text days__text--black">
+            <p>Вачкажец–горный массив и его окрестности, одно из красивейших мест первозданной камчатской природы. Небольшой пеший переход не успеет Вас утомить. А в награду за труд в конце пути открывается великолепный вид на горное озеро в чаше кратера старого потухшего вулкана, обрамленное пиками старых, невысоких гор.</p>
+            <p>Выезд из гостиницы и переезд около 2 часов. Пеший переход около 5 км.в одну сторону к горным циркам вулкана Вачкажец, осмотр водопада. Обед.  Отдых. По прибытию в машину чай с шоколадом! Обратный переход по тому же пути.</p>
+            <p>Продолжительность: 8 часов. Трансфер в гостиницу.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="day-four">
+      <div class="day-four__inner wrapper">
+        <div class="days__content">
+          <h2 class="days__title days__title--white"><span>День 4.</span> Экскурсия к подножию Авачинского вулкана</h2>
+          <div class="days__text days__text--white">
+            <p>Инструктаж по поведению группы в горах. Проверка снаряжения.Выезд на автомашине на вулканическое плато (высота 900 м) к подножию Авачинского вулкана (2 часа).</p>
+            <p>Пешеходная экскурсия к горе Верблюд, представляющую собой вулканическую экструзию. Находится в седловине между Корякским и Авачинским вулканами, относительная высота 100-150 м, ширина - около 100 м и по длине она протягивается на 500 м., состоит из трех сросшихся блоков.</p>
+            <p>Обед.  Поездка в Паратунку с купанием.</p>
+            <p>Продолжительность – 8 часов. Трансфер в гостиницу.</p>
+          </div>
+        </div>
+        <div class="slider slider__day-four">
+          <div class="slides-container" id="slider5">
+              <div class="slide"><img src="assets/img/IMG_20201121_180903_719 1.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header2.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+          </div>
+          <div class="slider__buttons">
+             <button class="slider__button slider__button--white" id="prev5">←</button>
+            <button class="slider__button slider__button--white" id="next5">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="day-five-six">
+      <div class="day-five-six__inner wrapper">
+        <div class="slider slider-left slider__day-five-six">
+          <div class="slides-container" id="slider6">
+              <div class="slide"><img src="assets/img/IMG_20201121_180903_719 1.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header2.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button slider__button--white" id="prev6">←</button>
+            <button class="slider__button slider__button--white" id="next6">→</button>
+          </div>
+        </div>
+        <div class="days__content">
+          <h2 class="days__title days__title--white"><span>День 5.</span> Морская прогулка к острову Старичков</h2>
+          <div class="days__text days__text--white">
+            <p>Инструктаж по поведению группы при передвижении на плавсредствах, приему таблеток от морской болезни.</p>
+            <p>Выезд на причал.  Морская прогулка по Авачинской бухте. Осмотр панорамы города Петропавловска-Камчатского, Авачинской губы и Авачинского залива. Маршрут пролегает мимо бухты Тихая, острова Бабушкин камень, мыса Станицкого, камней «Три брата». Увлекательная возможность донной рыбалки на терпуга, ленка, камбалу у «Трех братьев», мыса Безымянный, у острова Старичков.</p>
+            <p>Осмотр птичьих базаров - смешанных колонии кайр, моевок и бакланов. Трансфер в гостиницу.</p>
+            <p>Продолжительность 6 часов.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-five-six__inner wrapper">
+        <div class="days__content">
+          <h2 class="days__title days__title--white"><span>День 6.</span> Берег Тихого океана, экскурсия по городу</h2>
+          <div class="days__text days__text--white">
+            <p>Поездка на берег Тихого океана, в район Халактырского пляжа. Прогулка. Обед в городе. Обзорная экскурсия по г. Петропавловску-Камчатскому с посещением смотровых площадок. Рыбный рынок.</p>
+            <p>Продолжительность -5 часов.  Трансфер в гостиницу.</p>
+            <p>Обед.  Поездка в Паратунку с купанием.</p>
+            <p>Продолжительность – 8 часов. Трансфер в гостиницу.</p>
+          </div>
+        </div>
+        <div class="slider slider__day-five-six">
+          <div class="slides-container" id="slider7">
+              <div class="slide"><img src="assets/img/IMG_20201121_180903_719 1.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header2.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+              <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+          </div>
+          <div class="slider__buttons">
+             <button class="slider__button slider__button--white" id="prev7">←</button>
+            <button class="slider__button slider__button--white" id="next7">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="day-seven">
+      <div class="day-seven__inner wrapper">
+        <div class="day-seven__content-upper">
+          <div class="days__content">
+            <h2 class="days__title days__title--black"><span>День 7.</span> Вертолетная экскурсия в Долину Гейзеров и кальдеру вулкана Узон / свободный день</h2>
+          <div class="days__text days__text--black">
+            <p>Экскурсия проводится в содружестве с «ВИТЯЗЬ-ТРЕВЕЛ», крупнейшим оператором вертолётных туров на Камчатке. Выезд в аэропорт «Витязь –Аэро». К вашим услугам –современный аэропортовый комплекс, включающий в себя удобный зал ожидания, кафетерий, сувенирный магазин.</p>
+            <p>
+              Перелёт до Долины гейзеров занимает 1 час 10 минут. По пути, при благоприятных условиях, вы осмотрите два действующих вулкана – Карымский и Малый Семячик из окон вертолёта. </p>
+            <p>
+              Перелёт и посадка в кальдере Узон. Кальдера образовалась в результате обрушения стенок древнего вулкана около 40 тысяч лет назад, на её дне очень ярко проявляется гидротермальная деятельность.Сотни столбов пара вырываются здесь из жёлтых фумарольных полей. Осмотр термальных полей.</p>
+          </div>
+          </div>
+        </div>
+        <div class="day-seven__content-lower">
+          <div class="slider slider-left slider__day-seven">
+            <div class="slides-container" id="slider8">
+                <div class="slide"><img src="assets/img/IMG_20201121_180903_719 1.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header2.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+                <div class="slide"><img src="assets/img/slider-header3.png" alt=""><span class="slide__text">Какая-то подпись</span></div>
+            </div>
+            <div class="slider__buttons">
+              <button class="slider__button slider__button--black" id="prev8">←</button>
+              <button class="slider__button slider__button--black" id="next8">→</button>
+            </div>
+          </div>
+          <div class="days__text days__text--black">
+            <p>Перелёт и посадка в Налычевской долине. Купание в горячих источниках. Здесь же вам предложат обед - горячее, чай и камчатский морс. Трансфер в гостиницу. </p>
+            <p>Выезд из гостиницы и переезд около 2 часов. Пеший переход около 5 км.в одну сторону к горным циркам вулкана Вачкажец, осмотр водопада. Обед.  Отдых. По прибытию в машину чай с шоколадом! Обратный переход по тому же пути.</p>
+            <p>Продолжительность: 8 часов. Трансфер в гостиницу.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="day-eight">
+      <div class="days__content">
+        <h2 class="days__title days__title--white"><span>День 8.</span> Отъезд с Камчатки. Трансфер в аэропорт</h2>
+        <div class="days__text days__text--white">
+          <p>Заезд на рынок, прощальное посещение «медведей», фото на память. Возвращайтесь следующим летом!</p>
+        </div>
+      </div>
+    </section>
+    <section class="application ">
+      <div class="application__price wrapper">
+        <h2 class="price__title">Стоимость участия</h2>
+        <div class="price__top">
+          <div class="price__left">
+            <div class="price__left-block">
+              <span class="price__left-span">Базовый (для камчадал)</span>
+              <span class="price__left-span--bold">79 000 руб</span>
+            </div>
+            <div class="price__left-block">
+              <span class="price__left-span">Базовый + проживание</span>
+              <span class="price__left-span--bold">99 000 руб</span>
+            </div>
+            <div class="price__left-block">
+              <span class="price__left-span">Базовый + проживание + долина гейзеров</span>
+              <span class="price__left-span--bold">179 000 руб</span>
+            </div>
+          </div>
+          <div class="price__right">
+            <ul class="price__right-list">
+              <li><a class="price__right-link" href="#">Информация о бронях</a></li>
+              <li><a class="price__right-link" href="#">Важная информация</a></li>
+              <li><a class="price__right-link" href="#">Условия договора и возврата</a></li>
+            </ul>
+            <div class="price__right-button">
+              <span class="price__right-text">Отправить заявку</span>
+              <div class="price__right-btn"><i class="fa-solid fa-arrow-up-long fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="price__bottom">
+          <div class="price__bottom-text">
+            <h2 class="price__bottom-title price__bottom-title--green "><i class="fa-regular fa-circle-check"></i>  В стоимость входит</h2>
+            <ul class="price__bottom-list">
+              <li>встреча и проводы в аэропорту</li>
+              <li>питание: обеды во время экскурсий</li>
+              <li>услуги гида </li>
+              <li>все транспортные услуги ( автобусы, джипы-вездеходы 4WD)</li>
+              <li>все указанные в программе экскурсии</li>
+            </ul> 
+          </div>
+          <div class="price__bottom-text">
+            <h2 class="price__bottom-title"><i class="fa-solid fa-ruble-sign"></i>  За дополнительную плату</h2>
+            <ul class="price__bottom-list">
+              <li>вертолётная экскурсия в Долину Гейзеров и   кальдеру Узона, оплачивается в день вылета</li>
+              <li>дополнительные экскурсии и опции</li>
+              <li>размещение в гостинице</li>
+              <li>питание(кроме обедов во время экскурсий)</li>
+              <li>личные расходы</li>
+            </ul> 
+          </div>
+        </div> 
+      </div>
+      <div class="application__form wrapper">
+        <div class="form__left">
+          <h2 class="application__form-title">Онлайн-заявка</h2>
+          <div class="application__form-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-vk"></i></a>
+          </div>
+        </div>
+        <div class="form__right">
+          <div class="form__personal">
+            <div class="form__input">
+              <label class="form__input-label" for="name">Имя участника</label>
+              <input class="form__input-inp" type="text" placeholder="Имя" id="name">
+            </div>
+            <div class="form__input">
+              <label class="form__input-label" for="number">Количество человек</label>
+              <input class="form__input-inp" type="number" placeholder="1" id="number">
+            </div>
+          </div>
+          <div class="form__radio">
+            <label class="form__input-label" for="radioGroup">Тариф</label>
+            <div class="form__radio-row">
+              <div class="form__radio-block">
+                <input class="form__radio-inp" type="radio" id="radio1" name="radioGroup" checked>
+                <label class="form__radio-label" for="radio1">Базовый (для камчадал)</label>
+              </div>
+              <span class="form__radio-span">79 000 руб</span>
+            </div>
+            <div class="form__radio-row">
+              <div class="form__radio-block">
+                <input class="form__radio-inp" type="radio" id="radio2" name="radioGroup">
+                <label class="form__radio-label" for="radio2">Базовый + проживание</label>
+              </div>
+              <span class="form__radio-span">99 000 руб</span>
+            </div>
+            <div class="form__radio-row">
+              <div class="form__radio-block">
+                <input class="form__radio-inp" type="radio" id="radio3" name="radioGroup">
+                <label class="form__radio-label" for="radio3">Базовый + проживание + долина гейзеров</label>
+              </div>
+              <span class="form__radio-span">179 000 руб</span>
+            </div>
+          </div>
+          <div class="form__input">
+            <label class="form__input-label" for="date">Дата тура</label>
+            <input class="form__input-inp" type="date" id="date-range" name="trip-start">
+          </div>
+          <div class="form__input">
+            <label class="form__input-label" for="comment">Комментарий</label>
+            <input class="form__input-inp" type="text" id="comment" name="comment" placeholder="Напишите ваш комментарий здесь">
+          </div>
+          <button class="btn">Отправить</button>
+        </div>
+      </div>
+      <div class="application__email wrapper">
+        <img src="assets/img/book.png" alt="">
+        <div class="email__inner">
+          <h2 class="email__title">Что нужно знать отправляясь на Камчатку?</h2>
+          <p class="email__text">Получите памятку туриста просто оставив свой e-mail.</p>
+          <div class="email__form" >
+            <input class="email__form-input" type="email" placeholder="Ваш e-mail">
+            <button class="btn">Получить</button>
+          </div>
+        </div>
+      </div>  
+    </section>
+    <section class="about">
+      <div class="about__inner wrapper">
+        <h2 class="about__title">Про нашу супер крутую команду Dreamkam Tour</h2>
+        <p class="about__text">Наша команда - это люди влюбленные в свою работу. Каждый из них обладает проффесиональными знаниями, хорошей физической подготовкой. Следят за вашей безпасностью в туре, и тем чтобы каждый из вас получил максимальное колличество эмоций.</p>
+        <div class="about__slider">
+          <div class="about__slide-container" id="about-slider">
+              <div class="about-slide"><img src="assets/img/about-slide-1.png" alt=""><p class="about-slide__text">Алина Гончарова, <a href="#"> @alin_och</a></p></div>
+              <div class="about-slide"><img src="assets/img/about-slide-2.png" alt=""><p class="about-slide__text">Евгений Барсуков, <a href="#"> @eugen_eugen</a></p></div>
+              <div class="about-slide"><img src="assets/img/about-slide-3.png" alt=""><p class="about-slide__text">Дмитрий Осипов, <a href="#"> @dim_os</a></p></div>
+              <div class="about-slide"><img src="assets/img/about-slide-1.png" alt=""><p class="about-slide__text">Алина Гончарова, <a href="#"> @alin_och</a></p></div>
+              <div class="about-slide"><img src="assets/img/about-slide-1.png" alt=""><p class="about-slide__text">Алина Гончарова, <a href="#"> @alin_och</a></p></div>
+          </div>
+          <div class="slider__buttons about__buttons">
+            <button class="slider__button" id="about-prev">←</button>
+            <button class="slider__button" id="about-next">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__inner wrapper">
+        <div class="footer__list">
+          <img class="footer__logo" src="assets/img/footer-logo.png" alt="logo">
+          <ul class="footer__list-ul">
+            <li><a class="footer__list-link" href="#">Расписание тура</a></li>
+            <li><a class="footer__list-link" href="#">Стоимость</a></li>
+            <li><a class="footer__list-link" href="#">Как записаться</a></li>
+            <li><a class="footer__list-link" href="#">Команда</a></li>
+          </ul>
+        </div>
+        <div class="footer_photo">
+          <div class="footer__photo-button">
+            <span class="footer__photo-span">@dreamkamtour</span>
+            <button class="footer_btn ">Подписаться</button>
+          </div>
+          <div class="footer__photo-container">
+            <img class="footer__photo-img" src="./assets/img/footer-photo-1.png" alt="Instagram">
+            <img class="footer__photo-img" src="./assets/img/footer-photo-2.png" alt="Instagram">
+            <img class="footer__photo-img" src="./assets/img/footer-photo-3.png" alt="Instagram">
+            <img class="footer__photo-img" src="./assets/img/footer-photo-4.png" alt="Instagram">
+            <img class="footer__photo-img" src="./assets/img/footer-photo-5.png" alt="Instagram">
+            <img class="footer__photo-img" src="./assets/img/footer-photo-6.png" alt="Instagram">
+          </div>
+        </div>
+        <div class="footer__social">
+          <div class="footer__social-video">
+            <img class="footer__social-img" src="./assets/img/social-video.png" alt="Instagram">
+            <div class="footer__social-text">
+              <span class="footer__social-span--bold">Смотрите видео отзывы наших клиентов</span>
+              <span class="footer__social-span">Перейти в Instagram</span>
+            </div>
+          </div>
+          <span class="footer__social-span--bold">Социальные сети</span>
+          <div class="footer__social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-vk"></i></a>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <span class="footer__contacts-span--bold">+ 7 (760) 354-23-23</span>
+          <span class="footer__contacts-span--slim">Работаем с 9:00 до 18:00</span>
+          <span class="footer__contacts-span">info@dreamkamtour.ru</span>
+          <span class="footer__contacts-span">ул. Рубиннштерна, 41</span>
+        </div>
+      </div>
+      <div class="footer__text wrapper">2021 © Dreamkam Tour</div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/6b32d35f6c.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+<a href="#"></a>
