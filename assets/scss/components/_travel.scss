@@ -1,0 +1,99 @@
+.travel {
+    position: relative;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 70%;
+        background: linear-gradient(180deg, rgba(255,255,255,0) 31%, rgba(0,0,0,0.9444152661064426) 100%), url('../img/travel-bg.png') no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.travel__inner {
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+.travel__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: $black;
+    margin-bottom: 30px;
+    max-width: 728px;
+}
+.travel__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: $black;
+    margin-bottom: 35px;
+    max-width: 521px;
+}
+.travel__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    margin-bottom: 54px;
+    max-width: 613px;
+}
+.travel__info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 350px;
+    max-width: 728px;
+}
+.travel__info__item {
+    display: flex;
+    flex-direction: column;
+}
+.item__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $black;
+}
+.item__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+}
+
+.item__img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.travel__subtitle--white {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $white;
+    margin-bottom: 32px;
+    max-width: 662px;
+}
+.travel__text--white {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #acacac;
+    margin-bottom: 13px;
+    max-width: 300px;
+}
+.travel__author {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $white;
+}

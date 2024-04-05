@@ -1,0 +1,152 @@
+.header {
+    background-image: url('../img/header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.header__logo {
+    background-image: url('../img/header-logo.png');
+    width: 168px;
+    height: 38px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+     background-image: url('../img/header-logo-hover.png');   
+    }
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.header__link {
+    color: $primary;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color .3s ease;
+    
+    &:hover {
+        color: $secondary;
+    }
+
+}
+
+.header__btn {
+    color: $primary;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 32px;
+    cursor: pointer;
+    border: 1px solid $primary;
+    border-radius: 5px; 
+    background: none;
+    transition-duration: 0.3s;
+    &:hover {
+     border-color: $secondary;   
+    }
+}
+
+
+.header__banner {
+    display: flex;
+    padding-top: 60px;
+    align-items: end;
+    height: 758px;
+}
+
+.banner__content {
+    width: 55%;
+    align-self: self-start;
+
+}
+.banner__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 100%;
+    color: $white;
+}
+.banner__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 187%;
+    color: $white;
+    background-color: $secondary;
+    padding: 2px 24px;
+    border-radius: 16px;
+    display: block;
+    width: fit-content;
+    margin-top: 25px;
+}
+.bunner__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: $white;
+    margin-top: 40px;
+    width: 380px;
+}
+.banner__btn {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+.banner__btn__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.banner__btn__icon {
+    color: $white;
+    font-size: 24px;
+    font-weight: 400;
+    width: 64px;
+    height: 64px;
+    border: 1px solid $white;
+    border-radius: 43px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.banner__socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 173px;
+    & i {
+        color:#dfdfdf;
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
