@@ -14,6 +14,17 @@
 .travel__inner {
     padding-top: 120px;
     padding-bottom: 150px;
+    position: relative;
+    &::before {
+     content: '';
+     width: 800px;
+     height: 330px;
+     position: absolute;
+     top: 44%;   
+     right: 0;
+     background: url('../img/airplane.png') no-repeat;
+     background-size: cover;
+    }
 }
 .travel__title {
     font-family: 'Inter', sans-serif;

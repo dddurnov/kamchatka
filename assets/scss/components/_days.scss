@@ -186,10 +186,15 @@
         content: "";
         background:url('../img/day-seven-bg.png') no-repeat;   
         background-position: right center;
+        background-size: cover;
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 600px;
+        height: 450px;
         z-index: -1;
+        right: 0;
+       }
+       & .days__content {
+        max-width: 660px;
        }
 }
 

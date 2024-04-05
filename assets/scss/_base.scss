@@ -10,3 +10,23 @@ $dark-grey: #5A5A5A;
     margin: 0 auto;
     padding: 0 100px;
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.scroll-to-top:hover {
+    background-color: #555;
+}

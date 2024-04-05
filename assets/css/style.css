@@ -68,6 +68,26 @@ table {
   padding: 0 100px;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.scroll-to-top:hover {
+  background-color: #555;
+}
+
 .header {
   background-image: url("../img/header-bg.png");
   background-size: cover;
@@ -81,7 +101,6 @@ table {
   align-items: center;
   padding: 35px 0;
   position: relative;
-  z-index: 2;
 }
 
 .header__logo {
@@ -185,8 +204,21 @@ table {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  text-decoration: underline;
   cursor: pointer;
+  position: relative;
+}
+.banner__btn__text::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: -2px;
+  transition: width 0.3s ease-in-out;
+}
+.banner__btn__text:hover::before {
+  content: "";
+  width: 100%;
 }
 
 .banner__btn__icon {
@@ -230,6 +262,17 @@ table {
 .travel__inner {
   padding-top: 120px;
   padding-bottom: 150px;
+  position: relative;
+}
+.travel__inner::before {
+  content: "";
+  width: 800px;
+  height: 330px;
+  position: absolute;
+  top: 44%;
+  right: 0;
+  background: url("../img/airplane.png") no-repeat;
+  background-size: cover;
 }
 
 .travel__title {
@@ -503,10 +546,15 @@ table {
   content: "";
   background: url("../img/day-seven-bg.png") no-repeat;
   background-position: right center;
+  background-size: cover;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 450px;
   z-index: -1;
+  right: 0;
+}
+.day-seven__content-upper .days__content {
+  max-width: 660px;
 }
 
 .day-seven__content-lower {
@@ -774,11 +822,16 @@ table {
 }
 .price__right-link::before {
   content: "";
-  width: 100%;
+  width: 0;
   height: 1px;
   background: #F47648;
   position: absolute;
   bottom: -2px;
+  transition: width 0.3s ease-in-out;
+}
+.price__right-link:hover::before {
+  content: "";
+  width: 100%;
 }
 
 .price__right-button {
@@ -799,11 +852,16 @@ table {
 }
 .price__right-text::before {
   content: "";
-  width: 100%;
+  width: 0;
   height: 1px;
   background: #212121;
   position: absolute;
   bottom: -2px;
+  transition: width 0.3s ease-in-out;
+}
+.price__right-text:hover::before {
+  content: "";
+  width: 100%;
 }
 
 .price__right-btn {
@@ -930,7 +988,6 @@ table {
   border: none;
   outline: none;
   padding: 13px;
-  opacity: 0.6;
 }
 
 .form__radio {
@@ -1004,6 +1061,10 @@ table {
   padding: 8px 32px;
   cursor: pointer;
   align-self: flex-end;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background: #f05923;
 }
 
 .application__email {
@@ -1052,6 +1113,60 @@ table {
   border-bottom: 1px solid #999999;
 }
 
+.application__modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  background: #fff;
+  height: 100%;
+  gap: 40px;
+  margin: auto;
+  padding: 45px 118px;
+  position: relative;
+}
+.modal__form .application__form-title {
+  align-self: center;
+  margin-bottom: 65px;
+}
+.modal__form .btn {
+  align-self: center;
+  width: 100%;
+  margin-top: 65px;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 43px;
+  right: 42px;
+  font-size: 50px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
 .footer {
   background-color: #212121;
 }
@@ -1090,6 +1205,20 @@ table {
   font-size: 16px;
   line-height: 24px;
   color: #ACACAC;
+  position: relative;
+}
+.footer__list-link::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #ACACAC;
+  position: absolute;
+  bottom: -2px;
+  transition: width 0.3s ease-in-out;
+}
+.footer__list-link:hover::before {
+  content: "";
+  width: 100%;
 }
 
 .footer__photo-button {
@@ -1118,6 +1247,11 @@ table {
   border-radius: 5px;
   cursor: pointer;
   padding: 8px 34px;
+  transition: all 0.3s ease-in-out;
+}
+.footer_btn:hover {
+  background-color: #fff;
+  color: #212121;
 }
 
 .footer__photo-container {

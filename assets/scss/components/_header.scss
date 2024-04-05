@@ -13,7 +13,6 @@
     align-items: center;
     padding: 35px 0;
     position: relative;
-    z-index: 2;
 }
 
 .header__logo {
@@ -116,8 +115,23 @@
     font-size: 18px;
     line-height: 24px;
     color: $white;
-    text-decoration: underline;
     cursor: pointer;
+    position: relative;
+    &::before {
+        content: '';
+        width: 0;
+        height: 1px;
+        background: $white;
+        position: absolute;
+        bottom: -2px;
+        transition: width 0.3s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            content: '';
+            width: 100%;
+        }
+    }
 }
 .banner__btn__icon {
     color: $white;

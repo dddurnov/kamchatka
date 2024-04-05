@@ -37,6 +37,22 @@
     font-size: 16px;
     line-height: 24px;
     color: $grey;
+    position: relative;
+    &::before {
+        content: '';
+        width: 0;
+        height: 1px;
+        background: $grey;
+        position: absolute;
+        bottom: -2px;
+        transition: width 0.3s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            content: '';
+            width: 100%;
+        }
+    }
 }
 .footer_photo {
 }
@@ -64,6 +80,11 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 8px 34px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
 
 }
 .footer__photo-container {
@@ -146,3 +167,4 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
