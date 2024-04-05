@@ -3,13 +3,13 @@
 }
 
 .day-one {
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9444152661064426) 100%), url('/assets/img/day-one-bg.png') no-repeat;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9444152661064426) 100%), url('../img/day-one-bg.png') no-repeat;
     background-size: cover;
     padding: 65px 0 232px 0;
     position: relative;
     &::after {
         content: '';
-        background: url('/assets/img/cloud.png') no-repeat;
+        background: url('../img/cloud.png') no-repeat;
         background-size: cover;
         position: absolute;
         bottom: 0;
@@ -37,7 +37,7 @@
             content: '';
             width: 32px;
             height: 32px;
-            background: url('/assets/img/point.png') no-repeat;
+            background: url('../img/point.png') no-repeat;
             background-size: cover;
             position: absolute;
             left: -50px;
@@ -78,7 +78,7 @@
 }
 
 .day-two {
-    background: url('/assets/img/day-two-bg.png') no-repeat;
+    background: url('../img/day-two-bg.png') no-repeat;
     background-position: right top;
     padding: 65px 0 80px 0;
     position: relative;
@@ -107,7 +107,7 @@
     padding: 80px 0;
     position: relative;
     &::before {
-        background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%), url('/assets/img/day-three-bg.png'), no-repeat;
+        background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%), url('../img/day-three-bg.png'), no-repeat;
         background-size: cover;
         content: '';
         position: absolute;
@@ -131,7 +131,7 @@
     position: relative;
     &::before {
         content: '';
-        background: url('/assets/img/day-four-bg.png') no-repeat;
+        background: url('../img/day-four-bg.png') no-repeat;
         background-size: cover;
         position: absolute;
         right: 100px;
@@ -151,7 +151,7 @@
 
 .day-five-six {
     padding: 80px 0;
-    background: url('/assets/img/day-five-six-bg.png') no-repeat;
+    background: url('../img/day-five-six-bg.png') no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -165,7 +165,7 @@
         position: absolute;
         bottom: 0;
 
-        background: url('/assets/img/cloud.png') no-repeat;   
+        background: url('../img/cloud.png') no-repeat;   
     }
 }
 
@@ -184,7 +184,7 @@
     position: relative;
     &::before {
         content: "";
-        background:url('/assets/img/day-seven-bg.png') no-repeat;   
+        background:url('../img/day-seven-bg.png') no-repeat;   
         background-position: right center;
         position: absolute;
         width: 100%;

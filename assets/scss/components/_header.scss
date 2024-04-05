@@ -1,5 +1,5 @@
 .header {
-    background-image: url('/assets/img/header-bg.png');
+    background-image: url('../img/header-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 50px;
@@ -17,13 +17,13 @@
 }
 
 .header__logo {
-    background-image: url('/assets/img/header-logo.png');
+    background-image: url('../img/header-logo.png');
     width: 168px;
     height: 38px;
     transition: 0.3s ease;
     cursor: pointer;
     &:hover {
-     background-image: url('/assets/img/header-logo-hover.png');   
+     background-image: url('../img/header-logo-hover.png');   
     }
 }
 

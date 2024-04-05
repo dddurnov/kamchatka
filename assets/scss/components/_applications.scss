@@ -3,7 +3,7 @@
     &::before {
      content: "";
      width: 100%;
-     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.44861694677871145) 50%),     url('/assets/img/applications-bg.png') no-repeat;
+     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.44861694677871145) 50%), url('../img/applications-bg.png') no-repeat;
      background-size: cover;
      position: absolute;
      bottom: 0; 
