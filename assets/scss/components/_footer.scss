@@ -4,7 +4,6 @@
 .footer__inner {
     display: flex;
     justify-content: space-between;
-    gap: 82px;
     align-items: start;
     padding-top: 65px;
     padding-bottom: 65px;
@@ -21,7 +20,7 @@
 }
 
 .footer__list {
-
+    padding-right: 41px;
 }
 .footer__logo {
     margin-bottom: 32px;
@@ -55,6 +54,12 @@
     }
 }
 .footer_photo {
+    padding: 0 41px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(83,83,83,1) 50%, rgba(33,33,33,1) 100%);
+    border-image-slice: 1;
+
 }
 .footer__photo-button {
     display: flex;
@@ -95,6 +100,11 @@
 .footer__photo-img {
 }
 .footer__social {
+    padding: 0 41px;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(83,83,83,1) 50%, rgba(33,33,33,1) 100%);
+    border-image-slice: 1;
+    height: 301px;
 }
 .footer__social-video {
     display: flex;
@@ -134,6 +144,7 @@
 .footer__contacts {
     display: flex;
     flex-direction: column;
+    padding-left: 41px;
 
 }
 .footer__contacts-span--bold {
@@ -142,6 +153,7 @@
     font-size: 20px;
     line-height: 32px;
     color: $white;
+    text-wrap: nowrap;
 }
 .footer__contacts-span--slim {
     font-family: "Montserrat", sans-serif;

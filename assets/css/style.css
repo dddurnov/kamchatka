@@ -54,14 +54,6 @@ table {
   border-spacing: 0;
 }
 
-::selection {
-  background: transparent;
-}
-
-::-moz-selection {
-  background: transparent;
-}
-
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -252,7 +244,7 @@ table {
   content: "";
   width: 100%;
   height: 70%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 31%, rgba(0, 0, 0, 0.9444152661) 100%), url("../img/travel-bg.png") no-repeat;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 31%, rgb(0, 0, 0) 100%), url("../img/travel-bg.png") no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -307,7 +299,7 @@ table {
 
 .travel__info {
   display: flex;
-  gap: 16px;
+  gap: 64px;
   margin-bottom: 350px;
   max-width: 728px;
 }
@@ -371,9 +363,9 @@ table {
 }
 
 .day-one {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9444152661) 100%), url("../img/day-one-bg.png") no-repeat;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 80%), url("../img/day-one-bg.png") no-repeat;
   background-size: cover;
-  padding: 65px 0 232px 0;
+  padding: 80px 0 232px 0;
   position: relative;
 }
 .day-one::after {
@@ -444,8 +436,6 @@ table {
 }
 
 .day-two {
-  background: url("../img/day-two-bg.png") no-repeat;
-  background-position: right top;
   padding: 65px 0 80px 0;
   position: relative;
 }
@@ -466,13 +456,18 @@ table {
   width: 50%;
 }
 
+.day-two__inner {
+  background: url("../img/day-two-bg.png") no-repeat;
+  background-position: right top;
+}
+
 .day-three {
   height: 877px;
   padding: 80px 0;
   position: relative;
 }
 .day-three::before {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%), url("../img/day-three-bg.png"), no-repeat;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 31%, rgb(0, 0, 0) 100%), url("../img/day-three-bg.png"), no-repeat;
   background-size: cover;
   content: "";
   position: absolute;
@@ -491,23 +486,24 @@ table {
 .day-four {
   background-color: black;
   padding: 80px 0;
-  position: relative;
-}
-.day-four::before {
-  content: "";
-  background: url("../img/day-four-bg.png") no-repeat;
-  background-size: cover;
-  position: absolute;
-  right: 100px;
-  bottom: 100px;
-  height: 230px;
-  width: 373px;
+  padding-bottom: 160px;
 }
 
 .day-four__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+.day-four__inner::before {
+  content: "";
+  background: url("../img/day-four-bg.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: -165px;
+  height: 273px;
+  width: 373px;
 }
 
 .day-five-six {
@@ -523,10 +519,11 @@ table {
 .day-five-six::before {
   content: "";
   width: 100%;
-  height: 250px;
+  height: 116px;
   position: absolute;
   bottom: 0;
   background: url("../img/cloud.png") no-repeat;
+  background-size: cover;
 }
 
 .day-five-six__inner {
@@ -568,7 +565,7 @@ table {
 }
 
 .day-eight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 88%), url("/assets/img/day-eight-bg.png") no-repeat;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 88%), url("../img/day-eight-bg.png") no-repeat;
   background-size: cover;
   width: 100%;
   height: 710px;
@@ -913,6 +910,9 @@ table {
   font-size: 24px;
   line-height: 1;
   margin-bottom: 19px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .price__bottom-title--green {
@@ -1174,7 +1174,6 @@ body.modal-open {
 .footer__inner {
   display: flex;
   justify-content: space-between;
-  gap: 82px;
   align-items: start;
   padding-top: 65px;
   padding-bottom: 65px;
@@ -1187,6 +1186,10 @@ body.modal-open {
   background: #363636;
   position: absolute;
   bottom: 0;
+}
+
+.footer__list {
+  padding-right: 41px;
 }
 
 .footer__logo {
@@ -1219,6 +1222,14 @@ body.modal-open {
 .footer__list-link:hover::before {
   content: "";
   width: 100%;
+}
+
+.footer_photo {
+  padding: 0 41px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgb(83, 83, 83) 50%, rgb(33, 33, 33) 100%);
+  border-image-slice: 1;
 }
 
 .footer__photo-button {
@@ -1258,6 +1269,14 @@ body.modal-open {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 9px;
+}
+
+.footer__social {
+  padding: 0 41px;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgb(83, 83, 83) 50%, rgb(33, 33, 33) 100%);
+  border-image-slice: 1;
+  height: 301px;
 }
 
 .footer__social-video {
@@ -1301,6 +1320,7 @@ body.modal-open {
 .footer__contacts {
   display: flex;
   flex-direction: column;
+  padding-left: 41px;
 }
 
 .footer__contacts-span--bold {
@@ -1309,6 +1329,7 @@ body.modal-open {
   font-size: 20px;
   line-height: 32px;
   color: #fff;
+  text-wrap: nowrap;
 }
 
 .footer__contacts-span--slim {
