@@ -428,7 +428,7 @@ table {
 }
 
 .days__text--white {
-  color: #ACACAC;
+  color: #fff;
 }
 
 .days__text--black {
@@ -530,6 +530,55 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.days__add {
+  margin-top: 45px;
+}
+
+.days__add-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.days__add-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ACACAC;
+  padding: 16px 10px;
+}
+
+.days__add-text span {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.days__add-text p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ACACAC;
+}
+
+.days__add-text--black span {
+  color: #212121;
+}
+
+.days__add-text--black p {
+  color: #212121;
+  opacity: 0.7;
+}
+
+.days__add-title--black {
+  color: #212121;
 }
 
 .day-seven {
