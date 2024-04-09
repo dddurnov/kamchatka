@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -237,6 +238,15 @@ table {
   font-size: 24px;
 }
 
+@media screen and (max-width: 1140px) {
+  .header__banner {
+    flex-direction: column;
+    height: auto;
+  }
+  .banner__content {
+    width: 100%;
+  }
+}
 .travel {
   position: relative;
 }
@@ -440,22 +450,6 @@ table {
   position: relative;
 }
 
-.day-two__content-lower {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.day-two__content-lower .days__text {
-  width: 45%;
-}
-
-.day-two__content-upper {
-  width: 70%;
-}
-.day-two__content-upper .days__text {
-  width: 50%;
-}
-
 .day-two__inner {
   background: url("../img/day-two-bg.png") no-repeat;
   background-position: right top;
@@ -510,9 +504,6 @@ table {
   padding: 80px 0;
   background: url("../img/day-five-six-bg.png") no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  gap: 191px;
   position: relative;
   padding-bottom: 300px;
 }
@@ -522,6 +513,7 @@ table {
   height: 116px;
   position: absolute;
   bottom: 0;
+  z-index: -1;
   background: url("../img/cloud.png") no-repeat;
   background-size: cover;
 }
@@ -611,6 +603,10 @@ table {
 }
 .day-seven__content-lower .days__text {
   width: 45%;
+  order: 2;
+}
+.day-seven__content-lower .slider {
+  order: 1;
 }
 
 .day-eight {
@@ -622,6 +618,29 @@ table {
   place-items: center;
 }
 
+@media screen and (max-width: 1140px) {
+  .day-one__inner {
+    flex-direction: column;
+  }
+  .days__content {
+    max-width: 100%;
+  }
+  .day-three__inner, .day-five-six__inner, .day-seven__content-lower {
+    flex-direction: column;
+  }
+  .day-three__inner .days__content, .day-five-six__inner .days__content, .day-seven__content-lower .days__content {
+    order: 1;
+  }
+  .day-three__inner .slider, .day-five-six__inner .slider, .day-seven__content-lower .slider {
+    order: 2;
+  }
+  .day-three__inner .days__text, .day-five-six__inner .days__text, .day-seven__content-lower .days__text {
+    width: 100%;
+  }
+  .day-four__inner {
+    flex-direction: column;
+  }
+}
 .slider {
   width: 45%;
   height: 400px;
@@ -718,6 +737,11 @@ table {
   position: absolute;
 }
 
+@media screen and (max-width: 1140px) {
+  .slider {
+    width: 100%;
+  }
+}
 .expectations {
   background-color: #f1f1f1;
 }
@@ -774,6 +798,16 @@ table {
   color: #5A5A5A;
 }
 
+@media screen and (max-width: 1140px) {
+  .expect__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .expect__card {
+    width: 40%;
+    padding-bottom: 60px;
+  }
+}
 .application {
   position: relative;
 }
@@ -792,14 +826,7 @@ table {
   padding-top: 135px;
   padding-bottom: 135px;
   position: relative;
-}
-.application__price::before {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background: #212121;
-  position: absolute;
-  bottom: 0;
+  border-bottom: 4px solid #212121;
 }
 
 .price__title {
@@ -1221,9 +1248,11 @@ body.modal-open {
 }
 
 .footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 81px;
+  width: 100%;
+  grid-auto-flow: row dense;
   padding-top: 65px;
   padding-bottom: 65px;
   position: relative;
@@ -1235,10 +1264,6 @@ body.modal-open {
   background: #363636;
   position: absolute;
   bottom: 0;
-}
-
-.footer__list {
-  padding-right: 41px;
 }
 
 .footer__logo {
@@ -1271,14 +1296,6 @@ body.modal-open {
 .footer__list-link:hover::before {
   content: "";
   width: 100%;
-}
-
-.footer_photo {
-  padding: 0 41px;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  border-image: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgb(83, 83, 83) 50%, rgb(33, 33, 33) 100%);
-  border-image-slice: 1;
 }
 
 .footer__photo-button {
@@ -1321,10 +1338,6 @@ body.modal-open {
 }
 
 .footer__social {
-  padding: 0 41px;
-  border-right: 1px solid transparent;
-  border-image: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgb(83, 83, 83) 50%, rgb(33, 33, 33) 100%);
-  border-image-slice: 1;
   height: 301px;
 }
 
@@ -1369,7 +1382,6 @@ body.modal-open {
 .footer__contacts {
   display: flex;
   flex-direction: column;
-  padding-left: 41px;
 }
 
 .footer__contacts-span--bold {
@@ -1408,6 +1420,11 @@ body.modal-open {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 1140px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .about__inner {
   padding-top: 130px;
   padding-bottom: 130px;

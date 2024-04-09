@@ -81,21 +81,7 @@
     padding: 65px 0 80px 0;
     position: relative;
 }
-.day-two__content-lower {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    & .days__text {
-        width: 45%;
-    }
-}
 
-.day-two__content-upper {
-    width: 70%;
-    & .days__text {
-        width: 50%;
-    }
-}
 
 .day-two__inner {
     background: url('../img/day-two-bg.png') no-repeat;
@@ -157,9 +143,6 @@
     padding: 80px 0;
     background: url('../img/day-five-six-bg.png') no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: 191px;
     position: relative;
     padding-bottom: 300px;
     &::before {
@@ -168,7 +151,7 @@
         height: 116px;
         position: absolute;
         bottom: 0;
-
+        z-index: -1;
         background: url('../img/cloud.png') no-repeat;   
         background-size: cover;
     }
@@ -255,6 +238,10 @@
     gap: 32px;
     & .days__text {
         width: 45%;
+        order: 2;
+    }
+    & .slider {
+        order: 1;
     }
 }
 
@@ -269,3 +256,30 @@
     
 }
 
+
+@media screen and (max-width: 1140px) {
+    .day-one__inner {
+        flex-direction: column;
+    }
+
+    .days__content {
+        max-width: 100%;
+    }
+
+    .day-three__inner, .day-five-six__inner, .day-seven__content-lower {
+        flex-direction: column;
+        & .days__content {
+            order: 1;
+        }
+        & .slider {
+            order: 2;
+        }
+        & .days__text {
+            width: 100%;
+        }
+    }
+
+    .day-four__inner {
+        flex-direction: column;
+    }    
+}

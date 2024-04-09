@@ -158,7 +158,17 @@
 
 
 
+@media screen and (max-width: 1140px) {
+    .header__banner {
+        flex-direction: column;
+        height: auto;
+    }
 
+    .banner__content {
+        width: 100%;
+    }
+    
+}
 
 
 
