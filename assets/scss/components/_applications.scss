@@ -324,7 +324,7 @@
     margin-top: 262px;
     padding-bottom: 160px;
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
     align-items: center;
 }
 .email__inner {
@@ -419,5 +419,43 @@
     overflow: hidden;
   }
 
+  @media screen and (max-width: 1140px) {
+    .application__form {
+        flex-direction: column;
+    }
+    
+    .form__left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
 
+    .form__right {
+        max-width: 548px;
+    }
+
+    .price__top {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .price__left {
+        width: 100%;
+    }
+    .price__right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .price__right-button {
+        margin-top: 0;
+    }
+
+    .price__bottom {
+        width: 100%;
+    }
+}
 

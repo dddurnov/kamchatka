@@ -61,6 +61,63 @@
     }
 }
 
+.menu-wrapper {
+    width: $bar-width;
+	height: $bar-height + $bar-spacing*2;
+	cursor: pointer;
+}
+
+.header-burger-menu {
+    display: none;
+}
+
+.header-burger-menu ,
+.header-burger-menu:after,
+.header-burger-menu:before {
+    width: $bar-width;
+	height: $bar-height;
+}
+
+.header-burger-menu {
+	position: relative;
+	transform: translateY($bar-spacing);
+	background: $primary;
+	transition: all 0ms 300ms;
+  
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+}
+
+.header-burger-menu:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	background: $primary;
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header-burger-menu:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	background: $primary;
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header-burger-menu.animate:after {
+	top: 0;
+	transform: rotate(45deg);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.header-burger-menu.animate:before {
+	bottom: 0;
+	transform: rotate(-45deg);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
 
 .header__banner {
     display: flex;
@@ -167,7 +224,37 @@
     .banner__content {
         width: 100%;
     }
+    .banner__socials {
+        padding-top: 46px;
+    } 
+}
+
+@media  screen and (max-width: 768px) {
+    .header-burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__list {
+        position: absolute;
+        top: 0;
+        right: -30px;
+        background-color: #fff;
+        flex-direction: column;
+        padding:35px 50px; 
+        transition: transform 0.3s ease; 
+        transform: translateX(200%);
+        width: 70%;
+        border-radius: 15px;
+    }
     
+    .header__list.active {
+        display: flex;
+        transform: translateX(0);
+    }
+    .header__inner {
+        align-items: start;
+    }
 }
 
 

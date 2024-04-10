@@ -183,3 +183,8 @@ document.querySelector(".close").addEventListener("click", () => {
   modal.style.display = "none";
   document.body.classList.remove("modal-open");
 });
+
+document.querySelector(".menu-wrapper").addEventListener("click", function () {
+  document.querySelector(".header-burger-menu").classList.toggle("animate");
+  document.querySelector(".header__list").classList.toggle("active");
+});

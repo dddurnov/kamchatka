@@ -4,6 +4,9 @@ $white: #fff;
 $black: #212121;
 $grey: #ACACAC;
 $dark-grey: #5A5A5A;
+$bar-width: 24px;
+$bar-height: 3px;
+$bar-spacing: 8px;
 
 .wrapper {
     max-width: 1440px;
@@ -29,4 +32,13 @@ $dark-grey: #5A5A5A;
 
 .scroll-to-top:hover {
     background-color: #555;
+}
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+        padding: 0 40px;
+    }
+    
 }
