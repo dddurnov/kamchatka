@@ -59,6 +59,11 @@
         width: 40%;
         padding-bottom: 60px;
     }
+}
 
+@media  screen and (max-width: 768px) {
+    .expect__card {
+        width: 100%;
+    }   
     
 }

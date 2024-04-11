@@ -243,17 +243,32 @@
         flex-direction: column;
         padding:35px 50px; 
         transition: transform 0.3s ease; 
-        transform: translateX(200%);
+        transform: translateY(-200%);
         width: 70%;
         border-radius: 15px;
     }
     
     .header__list.active {
         display: flex;
-        transform: translateX(0);
+        transform: translateY(0);
     }
     .header__inner {
         align-items: start;
+    }
+
+    .bunner__text {
+        width: 100%;
+    }
+
+    .banner__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .banner__subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 16px 8px;
     }
 }
 

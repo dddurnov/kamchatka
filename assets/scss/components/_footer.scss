@@ -93,10 +93,6 @@
     gap: 9px;
 }
 
-.footer__social {
-
-    height: 301px;
-}
 .footer__social-video {
     display: flex;
     gap:18px;
@@ -172,8 +168,24 @@
 
 @media screen and (max-width: 1140px) {
     .footer__inner {
-        grid-template-columns: 1fr 1fr;
-        
+        grid-template-columns: 1fr 1fr;   
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .footer__inner {
+        grid-template-columns: 1fr;   
+    }
+    
+    .footer__photo-container {
+        grid-template-columns: repeat(3, 110px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__photo-container {
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
     }
     
 }

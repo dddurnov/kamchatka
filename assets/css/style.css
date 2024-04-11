@@ -81,10 +81,16 @@ table {
   background-color: #555;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1140px) {
   .wrapper {
     max-width: 768px;
     padding: 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    padding: 0 16px;
   }
 }
 .header {
@@ -326,16 +332,28 @@ table {
     flex-direction: column;
     padding: 35px 50px;
     transition: transform 0.3s ease;
-    transform: translateX(200%);
+    transform: translateY(-200%);
     width: 70%;
     border-radius: 15px;
   }
   .header__list.active {
     display: flex;
-    transform: translateX(0);
+    transform: translateY(0);
   }
   .header__inner {
     align-items: start;
+  }
+  .bunner__text {
+    width: 100%;
+  }
+  .banner__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .banner__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 8px;
   }
 }
 .travel {
@@ -459,6 +477,13 @@ table {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .travel__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
 .days__content {
   max-width: 500px;
 }
@@ -565,8 +590,8 @@ table {
 }
 
 .day-three {
-  height: 877px;
-  padding: 80px 0;
+  padding-bottom: 287px;
+  padding-top: 80px;
   position: relative;
 }
 .day-three::before {
@@ -766,6 +791,9 @@ table {
   .day-four__inner {
     flex-direction: column;
   }
+  .day-five-six__inner:not(:last-child) {
+    margin-bottom: 80px;
+  }
   .day-seven__content-upper::before {
     display: none;
   }
@@ -780,8 +808,14 @@ table {
   .days__title span::before {
     display: none;
   }
-  .footer {
-    display: none;
+  .day-three {
+    padding-bottom: 0;
+  }
+  .day-three::before {
+    height: 38%;
+  }
+  .day-three .slider__button--black {
+    color: white;
   }
 }
 .slider {
@@ -884,6 +918,9 @@ table {
   .slider {
     width: 100%;
   }
+  .slider__buttons {
+    align-self: flex-start;
+  }
 }
 .expectations {
   background-color: #f1f1f1;
@@ -951,6 +988,11 @@ table {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 768px) {
+  .expect__card {
+    width: 100%;
+  }
+}
 .application {
   position: relative;
 }
@@ -996,6 +1038,7 @@ table {
   justify-content: space-between;
   padding: 50px 0;
   position: relative;
+  gap: 8px;
 }
 .price__left-block::before {
   content: "";
@@ -1219,6 +1262,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .form__radio-inp {
@@ -1410,12 +1454,29 @@ body.modal-open {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 25px;
   }
   .price__right-button {
     margin-top: 0;
   }
   .price__bottom {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .price__right, .price__left-block, .price__bottom, .application__email, .form__personal, .form__radio-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form__input, .price__bottom-text {
+    width: 100%;
+  }
+  .form__radio-span {
+    padding-left: 31px;
+  }
+  .application__form-title, .price__title, .travel__title, .expect__title {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 .footer {
@@ -1512,10 +1573,6 @@ body.modal-open {
   gap: 9px;
 }
 
-.footer__social {
-  height: 301px;
-}
-
 .footer__social-video {
   display: flex;
   gap: 18px;
@@ -1600,6 +1657,20 @@ body.modal-open {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (max-width: 670px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+  .footer__photo-container {
+    grid-template-columns: repeat(3, 110px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__photo-container {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
 .about__inner {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -1670,6 +1741,13 @@ body.modal-open {
 
 .about__text {
   max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .about__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

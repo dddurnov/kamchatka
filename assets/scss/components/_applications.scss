@@ -38,6 +38,7 @@
     justify-content: space-between;
     padding: 50px 0;
     position: relative;
+    gap: 8px;
     &::before {
         content: '';
         width: 100%;
@@ -254,6 +255,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 .form__radio-inp {
     appearance: none; 
@@ -447,7 +449,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        gap: 25px;
     }
 
     .price__right-button {
@@ -456,6 +458,26 @@
 
     .price__bottom {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .price__right, .price__left-block, .price__bottom, .application__email, .form__personal, .form__radio-row  {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form__input, .price__bottom-text {
+        width: 100%;
+    }
+
+    .form__radio-span {
+        padding-left: 31px;
+    }
+
+    .application__form-title, .price__title, .travel__title, .expect__title {
+        font-size: 32px;
+        line-height: 40px;
     }
 }
 

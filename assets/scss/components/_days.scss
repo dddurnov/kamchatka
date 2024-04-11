@@ -111,8 +111,8 @@
 
 
 .day-three {
-    height: 877px;
-    padding: 80px 0;
+    padding-bottom: 287px;
+    padding-top: 80px;
     position: relative;
     &::before {
         background: linear-gradient(180deg, rgba(255,255,255,0) 31%, rgb(0, 0, 0) 100%), url('../img/day-three-bg.png'), no-repeat;
@@ -324,6 +324,12 @@
         flex-direction: column;
     }    
 
+    .day-five-six__inner {
+        &:not(:last-child) {
+            margin-bottom: 80px;
+        }
+    }
+
 
     .day-seven__content-upper {
         &::before {
@@ -346,10 +352,16 @@
             &::before {
                 display: none;
             }
-        }
-        
+        }   
     }
-    .footer {
-        display: none;
+
+    .day-three {
+        &::before {
+        height: 38%;
+        }
+        padding-bottom: 0;
+        & .slider__button--black {
+            color: white;
+        }
     }
 }

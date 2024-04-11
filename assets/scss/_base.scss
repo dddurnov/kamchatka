@@ -35,10 +35,18 @@ $bar-spacing: 8px;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1140px) {
     .wrapper {
         max-width: 768px;
         padding: 0 40px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+        padding: 0 16px;
     }
     
 }

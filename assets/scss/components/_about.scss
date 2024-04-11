@@ -67,3 +67,10 @@
 .about__text {
     max-width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .about__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
