@@ -115,5 +115,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
+    .travel__inner::before {
+        top: 48%;
+        left:0;
+    }
     
 }

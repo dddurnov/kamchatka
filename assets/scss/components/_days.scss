@@ -364,4 +364,12 @@
             color: white;
         }
     }
+
+    .wrapper  {
+        overflow-x: auto;
+    }
+
+    .day-four__inner {
+        overflow-x: visible;
+    }
 }

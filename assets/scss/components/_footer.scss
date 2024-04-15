@@ -184,8 +184,7 @@
 
 @media screen and (max-width: 768px) {
     .footer__photo-container {
-        grid-template-columns: repeat(2,1fr);
-        place-items: center;
+        display: none;
     }
     
 }
