@@ -384,7 +384,6 @@
     flex-direction: column;
     max-width: 800px;
     background: $white;
-    height: 100%;
     gap: 40px;
     margin: auto;
     padding: 45px 118px;
@@ -459,6 +458,11 @@
     .price__bottom {
         width: 100%;
     }
+    .modal__form {
+        max-width: 768px;
+        padding: 0 40px;
+        padding-top: 45px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -478,6 +482,15 @@
     .application__form-title, .price__title, .travel__title, .expect__title {
         font-size: 32px;
         line-height: 40px;
+    }
+    .modal__form {
+        max-width: 768px;
+        padding: 16px;
+        padding-top: 45px;
+    }
+    .close {
+        top: 16px;
+        right: 16px;
     }
 }
 
